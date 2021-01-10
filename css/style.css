@@ -13,11 +13,12 @@ body {
   background-color: whitesmoke;
   max-width: 80%;
   margin: auto;
+  margin-top: 50px;
 }
 
 header,
 footer {
-  background-color: #192841;
+  background-color: #142e1d;
   color: lightgray;
   text-align: center;
   border-radius: 10px;
