@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Roboto', sans-serif;
     background-color: whitesmoke;
     position: relative;
     min-height: 100%;
@@ -21,7 +21,7 @@ footer {
 	flex-flow: column;
 	align-items: center;
 	justify-content: center;
-    background-color: lightslategray;
+    background-color:rgb(158, 158, 158);
 }
 
 footer {
@@ -44,8 +44,12 @@ footer h2 {
     font-size: 1.25em;
 }
 
+img {
+    height: 300px;
+}
+
 nav {
-    background-color: #192841;
+    background-color:  #142e1d;
     box-shadow: 0 2px 15px gray;
     text-align: center;
     margin-bottom: 2em;
@@ -66,13 +70,12 @@ nav ul li a{
 }
 
 nav ul li a:hover {
-    background-color: whitesmoke;
-    color: #192841;
+    color: whitesmoke;
     font-weight: bold;
 }
 
 .active a {
-    color: yellow;
+    color: lightpink;
 }
 
 section {
