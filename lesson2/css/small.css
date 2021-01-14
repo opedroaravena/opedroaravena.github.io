@@ -97,13 +97,13 @@ article {
 }
 
 #header-footer-color {
-    background-color: #778899;
+    background-color: rgb(158, 158, 158);
     color: whitesmoke;
     padding: 1em;
 }
 
 #nav-color {
-    background-color: #192841;
+    background-color: #142e1d;
     color: whitesmoke;
     padding: 1em;
 }
