@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Weather Anything - Preston</title>
+        <title>Your Weekly Weather - Preston</title>
         <meta name="description" content="This is the Preston page for the Weather Anything website. It displays
             information such as a weather summary, five day forecast, etc.">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -19,24 +19,28 @@
 
 <body>
     <div class="page-container">
-
         <div class="main-container">
             <div class="hidden">
-                <p>Preston hamburguers in the central park! 10:00 a.m. Friday at the city central park.</p>
+                <p>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
             </div>
             <header>
                 <div class="logo-header">
-                    <img src="/images/weather-icon-png-11067.png" alt="Logo for Weather Anything">
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="images/logo-small.png">
+                        <img src="/images/weather-icon-png-11067.png" alt="Logo for Weather Anything">
+                    </picture>
+
                     <section class="headings">
-                        <h1>Your Weekly Weather </h1>
-                        <span>We never let you down!</span>
+                        <h1>Weather Anything</h1>
+                        <span>There's always a silver lining!</span>
+                    </section>
                 </div>
             </header>
             <nav>
                 <ul class="navigation">
                     <li><a class="ham" href="#">&#9776;</a></li>
                     <li><a href="#">Home</a></li>
-                    <li><a class="active" href="preston-5.html">Preston</a></li>
+                    <li><a class="active" href="preston.html">Preston</a></li>
                     <li><a href="#">Soda Springs</a></li>
                     <li><a href="#">Fish Haven</a></li>
                     <li><a href="#">Storm Center</a></li>
@@ -46,11 +50,20 @@
             <main>
                 <div class="weather-summary">
                     <h2>Preston Idaho</h2>
-                    <img class="hero-image" src="images/preston-hero.jpg" alt="Preston, ID hero image.">
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="images/hero-small-500.jpg">
+                        <source media="(max-width: 800px)" srcset="images/hero-medium-800.jpg">
+                        <img class="hero-image" src="images/hero-large-1400.jpg" alt="Preston, ID hero image.">
+                    </picture>
                     <article>
                         <h3>Weather Summary</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident beatae autem cupiditate
-                            similique assumenda veniam.</p>
+                        <ul class="weather-summary-list">
+                            <li>Currently: Rainy</li>
+                            <li>High: <span id="temperature">49</span>&deg;F</li>
+                            <li>Wind Chill: <span id="wind-chill"></span>&deg;F</li>
+                            <li>Humidity: 95%</li>
+                            <li>Wind Speed: <span id="wind-speed">12</span> mph</li>
+                        </ul>
                     </article>
                 </div>
                 <div class="five-day">
@@ -103,10 +116,10 @@
                     <h3>Contact Information</h3>
                     <ul>
                         <li><img src="images/email.png" alt="small email icon" class="contact-item">
-                            <p class="contact-item">pedroaravena@gmail.com</p>
+                            <p class="contact-item">john_doe@gmail.com</p>
                         </li>
                         <li><img src="images/phone.png" alt="small phone icon" class="contact-item">
-                            <p class="contact-item">555-555-5555</p>
+                            <p class="contact-item">888-555-5555</p>
                         </li>
                     </ul>
                 </div> <!-- contact -->
@@ -114,14 +127,17 @@
             </div> <!-- bottom-section -->
 
             <div>
-                <div id="copyright">Your Weekly Weather<span id="copyright-symbol">&copy;</span>
+                <div id="copyright">Weather Anything <span id="copyright-symbol">&copy;</span>
                     <span id="current-year"></span></div>
                 <div id=today></div>
             </div>
         </footer>
     </div> <!-- page-container -->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/webfontload.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/windchill.js"></script>
 </body>
 
 </html>
