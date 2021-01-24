@@ -1,5 +1,3 @@
-// toggle the menu (hamburger menu)
-
 const hambutton = document.querySelector('.ham')
 const mainnav = document.querySelector('.navigation')
 
